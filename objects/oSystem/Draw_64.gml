@@ -62,6 +62,11 @@ draw_set_font(fScore);
 draw_set_halign(fa_left);
 draw_text_color(200 + 100+1, 5+1, "Score: " + string(playerscore), c_black, c_black, c_black, c_black, 1);
 draw_text_color(200 + 100, 5, "Score: " + string(playerscore), c_white, c_white, c_white, c_white, 1);
-	
+
+draw_text_color(300 + 100+1, 5+1, "Key: " + string(haskey), c_black, c_black, c_black, c_black, 1);
+draw_text_color(300 + 100, 5, "Key: " + string(haskey), c_white, c_white, c_white, c_white, 1);
+
+
 draw_text_color(400 + 100+1, 5+1, "Health: " + string(hp), c_black, c_black, c_black, c_black, 1);
 draw_text_color(400 + 100, 5, "Health: " + string(hp), c_white, c_white, c_white, c_white, 1);
+

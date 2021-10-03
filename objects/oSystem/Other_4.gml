@@ -1,5 +1,5 @@
 /// @description Room start
-
+current_seed = choose(SEEDS.seed_1, SEEDS.seed_2, SEEDS.seed_3);
 // Set room to seed.
 random_set_seed(current_seed);
 
@@ -62,4 +62,29 @@ while (!KeySet)
 }
 
 // Add walls to environment
-sSystemRoomStartBuild();
+//sSystemRoomStartBuild();
+//script_execute(sSystemRoomStartBuild);
+for (var xx = 0; xx < GRID_SIZE; xx++)
+	{
+		for (var yy = 0; yy < GRID_SIZE; yy++)
+		{
+			// Wall stuff	
+			if(Grid[# xx, yy] == VOID)
+			{
+				var make_wall = false;
+
+				if(yy < GRID_SIZE-1 && xx < GRID_SIZE) {
+					if (Grid[# xx, yy+1] <= PATH || Grid[# xx, yy+1] == KEY || Grid[# xx, yy+1] == DOOR)
+					{
+						make_wall = true;
+						//show_debug_message("wall");
+					}
+				}
+				if(make_wall)
+				{
+					instance_create_depth(xx*CELL_SIZE,yy*CELL_SIZE, depth+1, oWall);
+				}
+			}
+		}
+	}
+	

@@ -2,6 +2,8 @@
 xspd=0;
 yspd=0;
 max_spd=3;
+has_key=false;
+flash = 0;
 
 enum player {
 	moving,
@@ -11,4 +13,5 @@ enum player {
 	won
 }
 
-state = player.idle;
+state = player.moving;
+stepcnt = 0;
