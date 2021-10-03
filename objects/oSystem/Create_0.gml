@@ -10,6 +10,8 @@ enum SEEDS
 
 current_seed = choose(SEEDS.seed_1, SEEDS.seed_2, SEEDS.seed_3);
 
-
+hp = 200;
+max_hp = 5;
+playerscore = 0;
 
 

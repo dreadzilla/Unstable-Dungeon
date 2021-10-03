@@ -7,6 +7,6 @@ for (var ii = 0; ii < GRID_SIZE; ii++)
 		draw_sprite(sTile, 
 			Grid[# ii,jj], 
 			ii*CELL_SIZE, 
-			jj*CELL_SIZE)	
+			jj*CELL_SIZE);
 	}
 }

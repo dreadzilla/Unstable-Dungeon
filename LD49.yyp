@@ -1,11 +1,20 @@
 {
   "resources": [
+    {"id":{"name":"oSolid","path":"objects/oSolid/oSolid.yy",},"order":3,},
+    {"id":{"name":"scrPlayerInput","path":"scripts/scrPlayerInput/scrPlayerInput.yy",},"order":2,},
     {"id":{"name":"macro","path":"scripts/macro/macro.yy",},"order":0,},
+    {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},"order":2,},
+    {"id":{"name":"sSystemRoomStartBuild","path":"scripts/sSystemRoomStartBuild/sSystemRoomStartBuild.yy",},"order":2,},
+    {"id":{"name":"fStart","path":"fonts/fStart/fStart.yy",},"order":2,},
+    {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":2,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":1,},
     {"id":{"name":"sTile","path":"sprites/sTile/sTile.yy",},"order":0,},
+    {"id":{"name":"oPlayerStats","path":"objects/oPlayerStats/oPlayerStats.yy",},"order":4,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":1,},
     {"id":{"name":"scrSystemStepWorld","path":"scripts/scrSystemStepWorld/scrSystemStepWorld.yy",},"order":0,},
-    {"id":{"name":"rDungeon","path":"rooms/rDungeon/rDungeon.yy",},"order":1,},
+    {"id":{"name":"fTitle","path":"fonts/fTitle/fTitle.yy",},"order":0,},
+    {"id":{"name":"rTitle","path":"rooms/rTitle/rTitle.yy",},"order":1,},
+    {"id":{"name":"fScore","path":"fonts/fScore/fScore.yy",},"order":1,},
     {"id":{"name":"oSystem","path":"objects/oSystem/oSystem.yy",},"order":0,},
     {"id":{"name":"scrSystemStepDungeon","path":"scripts/scrSystemStepDungeon/scrSystemStepDungeon.yy",},"order":1,},
     {"id":{"name":"rMain","path":"rooms/rMain/rMain.yy",},"order":0,},
@@ -24,8 +33,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rTitle","path":"rooms/rTitle/rTitle.yy",},},
     {"roomId":{"name":"rMain","path":"rooms/rMain/rMain.yy",},},
-    {"roomId":{"name":"rDungeon","path":"rooms/rDungeon/rDungeon.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
