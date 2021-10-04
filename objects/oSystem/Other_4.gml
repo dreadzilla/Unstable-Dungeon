@@ -1,7 +1,7 @@
 /// @description Room start
 current_seed = choose(SEEDS.seed_1, SEEDS.seed_2, SEEDS.seed_3);
 // Set room to seed.
-random_set_seed(current_seed);
+//random_set_seed(current_seed);
 
 // Create grid
 Grid = ds_grid_create(GRID_SIZE, GRID_SIZE);
@@ -58,6 +58,24 @@ while (!KeySet)
 		{
 			Grid[# key_x,key_y] = KEY;	
 			KeySet = true;
+		}
+}
+
+var DeathSet = false;
+while (!DeathSet)
+{
+	var death_x = random(GRID_SIZE);
+	var death_y = random(GRID_SIZE);
+	
+	if (death_x != GRID_SIZE/2 && death_y != GRID_SIZE/2)
+		if (Grid[# death_x, death_y] == PATH) 
+		{
+			show_debug_message(death_x);
+			show_debug_message(death_y);
+			
+			instance_create_depth(death_x * CELL_SIZE, death_y * CELL_SIZE, 0, oEnemy);
+			//instance_create_layer(death_x * CELL_SIZE, death_y * CELL_SIZE, "Enemy", oEnemy);
+			DeathSet = true;
 		}
 }
 

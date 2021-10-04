@@ -5,10 +5,11 @@ switch (eState)
 {
 	case enemy.idle:
 		var _dist = point_distance(x, y, oPlayer.x, oPlayer.y);
-		show_debug_message(_dist);
+		//show_debug_message(_dist);
 		if (_dist < enemy_distance)
 		{
-			eState = enemy.chase;	
+			eState = enemy.chase;
+			audio_play_sound(aChase,1,0);
 		}
 	break;
 	

@@ -10,14 +10,15 @@ switch(room)
 /* Debug functions below */
 
 // Restart the game
-if (keyboard_check_pressed(vk_escape))
-	room_restart();
-	
-if (keyboard_check(vk_shift) && mouse_check_button_pressed(mb_left))
-{
-	instance_create_depth(mouse_x, mouse_y, -1, oEnemy);	
-	show_debug_message(mouse_x);
-}
+//if (keyboard_check_pressed(vk_escape))
+//	room_restart();
+
+// Spawn enemy
+//if (keyboard_check(vk_shift) && mouse_check_button_pressed(mb_left))
+//{
+//	instance_create_depth(mouse_x, mouse_y, -1, oEnemy);	
+//	show_debug_message(mouse_x);
+//}
 	
 //if (keyboard_check_pressed(vk_shift))
 //	show_debug_message(random_get_seed());

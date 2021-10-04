@@ -8,24 +8,24 @@ function scrSystemStepWorld(){
 	}
 
 	// Reload new seed
-	if (keyboard_check(vk_shift))
-	{
-		if (keyboard_check_pressed(ord("1")))
-		{
-			current_seed = SEEDS.seed_1;
-			room_restart();
-		}
-		if (keyboard_check_pressed(ord("2")))
-		{
-			current_seed = SEEDS.seed_2;
-			room_restart();
-		}
-		if (keyboard_check_pressed(ord("3")))
-		{
-			current_seed = SEEDS.seed_3;
-			room_restart();
-		}
+	//if (keyboard_check(vk_shift))
+	//{
+	//	if (keyboard_check_pressed(ord("1")))
+	//	{
+	//		current_seed = SEEDS.seed_1;
+	//		room_restart();
+	//	}
+	//	if (keyboard_check_pressed(ord("2")))
+	//	{
+	//		current_seed = SEEDS.seed_2;
+	//		room_restart();
+	//	}
+	//	if (keyboard_check_pressed(ord("3")))
+	//	{
+	//		current_seed = SEEDS.seed_3;
+	//		room_restart();
+	//	}
 
-	}
+	//}
 
 }

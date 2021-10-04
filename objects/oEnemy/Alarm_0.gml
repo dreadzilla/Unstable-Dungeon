@@ -6,6 +6,8 @@ with(other)
 	{
 		flash=3;
 		oSystem.hp--;
-		state = player.hurt;
+		var _makesound = choose(true, false, false);
+		if (_makesound)
+			audio_play_sound(aHurt,1,0);
 	}
 }
